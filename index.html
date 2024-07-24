@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="./images/логотип.jpg" alt="">
+             <h5>ARI&BAY</h5>
+            <ul>
+                <li><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z"/>
+                  </svg>
+                  </p></li>
+                <li><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-8.029-4.46a2 2 0 0 0-1.942 0L3 8m18 0-9 6.5L3 8"/>
+                  </svg></p></li>
+                <li><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M10 3v4a1 1 0 0 1-1 1H5m14-4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1ZM9 12h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Zm5.697 2.395v-.733l1.269-1.219v2.984l-1.268-1.032Z"/>
+                  </svg>
+                  </p></li>
+                  </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                  </svg></p>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="./images/логотип.jpg" alt="">
+            </div>
+        </div>
+
+        <!--setttings menu -->
+
+        <div class="settings-menu">
+
+          <div id="dark-btn">
+            <span></span>
+          </div>
+          <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="./images/ss.jpeg" alt="">
+            <div>
+              <p>Gulzina Gulamidinova</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <i><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M11 9h6m-6 3h6m-6 3h6M6.996 9h.01m-.01 3h.01m-.01 3h.01M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
+            </svg></i>
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+          <div class="settings-links">
+            <p class="settings-icon"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg></p>
+            <a href="">Settings & Privacy <p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="m10 16 4-4-4-4"/>
+            </svg></p></a>
+          </div>
+          <div class="settings-links">
+            <p class="settings-icon"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="M3 11.5h13m-13 0V18a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-6.5m-13 0V9a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v2.5M9 5h11a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-1"/>
+            </svg>
+            </p>
+            <a href="">Help & Support <p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="m10 16 4-4-4-4"/>
+            </svg></p></a>
+          </div>
+          <div class="settings-links">
+            <p class="settings-icon"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"/>
+            </svg>
+            </p>
+            <a href="">Display & Accessibility <p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="m10 16 4-4-4-4"/>
+            </svg></p></a>
+          </div>
+          <div class="settings-links">
+            <p class="settings-icon"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12 8a1 1 0 0 0-1 1v10H9a1 1 0 1 0 0 2h11a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-8Zm4 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z" clip-rule="evenodd"/>
+              <path fill-rule="evenodd" d="M5 3a2 2 0 0 0-2 2v6h6V9a3 3 0 0 1 3-3h8c.35 0 .687.06 1 .17V5a2 2 0 0 0-2-2H5Zm4 10H3v2a2 2 0 0 0 2 2h4v-4Z" clip-rule="evenodd"/>
+            </svg>
+            </p>
+            <a href="">Lagout <p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="m10 16 4-4-4-4"/>
+            </svg></p></a>
+          </div>
+
+
+        </div>
+        </div>
+    </nav>
+  
+
+  <main>
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+            <a href="#"><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M11 4.717c-2.286-.58-4.16-.756-7.045-.71A1.99 1.99 0 0 0 2 6v11c0 1.133.934 2.022 2.044 2.007 2.759-.038 4.5.16 6.956.791V4.717Zm2 15.081c2.456-.631 4.198-.829 6.956-.791A2.013 2.013 0 0 0 22 16.999V6a1.99 1.99 0 0 0-1.955-1.993c-2.885-.046-4.76.13-7.045.71v15.081Z" clip-rule="evenodd"/>
+              </svg>
+              </p>Latest News</a>
+            <a href="#"><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4H6Zm7.25-2.095c.478-.86.75-1.85.75-2.905a5.973 5.973 0 0 0-.75-2.906 4 4 0 1 1 0 5.811ZM15.466 20c.34-.588.535-1.271.535-2v-1a5.978 5.978 0 0 0-1.528-4H18a4 4 0 0 1 4 4v1a2 2 0 0 1-2 2h-4.535Z" clip-rule="evenodd"/>
+              </svg>
+              </p>Friends</a>
+            <a href="#"><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd"/>
+              </svg>
+              </p>Group</a>
+            <a href="#"><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
+              </svg>
+              </p>Marketplace</a>
+            <a href="#"><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7.111 20A3.111 3.111 0 0 1 4 16.889v-12C4 4.398 4.398 4 4.889 4h4.444a.89.89 0 0 1 .89.889v12A3.111 3.111 0 0 1 7.11 20Zm0 0h12a.889.889 0 0 0 .889-.889v-4.444a.889.889 0 0 0-.889-.89h-4.389a.889.889 0 0 0-.62.253l-3.767 3.665a.933.933 0 0 0-.146.185c-.868 1.433-1.581 1.858-3.078 2.12Zm0-3.556h.009m7.933-10.927 3.143 3.143a.889.889 0 0 1 0 1.257l-7.974 7.974v-8.8l3.574-3.574a.889.889 0 0 1 1.257 0Z"/>
+              </svg>
+              </p>Watch</a>
+              <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="./images/macbook1.jpeg" alt="">Web Developers</a>
+                <a href="#"><img src="./images/macbook2.jpeg" alt="">Web Design course</a>
+                <a href="#"><img src="./images/macbook3.webp" alt="">Full Stack Development</a>
+                <a href="#"><img src="./images/macbook4.jpg" alt="">Website Experts</a>
+            </div>
+        </div>
+        <!-- main-content -->
+        <div class="main-content">
+            
+            <div class="story-gallery">
+              <div class="story story1">
+                 <i><svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7.757v8.486M7.757 12h8.486M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                </svg>
+                </i>
+                 <p>Post Story</p>
+              </div>
+              <div class="story story2">
+                <i><img src="https://cdn.acidcow.com/pics/20190129/russian_girls_01.jpg" alt=""></i>
+                <p>Alison</p>
+             </div>
+             <div class="story story3">
+              <i> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc5FbsFO_xNGmxGNNeaFEqiLxZB0qjpB7tT1Z0vO51zWUZSv15K5SpHpu6YzZ_Ci6iqnk&usqp=CAU" alt=""></i>
+              <p>Jackson</p>
+           </div>
+           <div class="story story4">
+            <i> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILyB75PS4nEyR5eEJpHx9LpbnJmXTQ69EGsxQgmqHZZ9SfQGp9d_CpYYpo6Vinm_oA4c&usqp=CAU" alt=""></i>
+            <p>Samona</p>
+         </div>
+         <div class="story story5">
+          <i><img src="data:image/jpeg;base64,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" alt=""></i>
+          <p>John Doe</p>
+       </div>
+     </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                  <img src="images/ss.jpeg" alt="">
+                <div>
+                <p>Gulzina Gulamidinova</p>
+                <small>Public <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 17">
+                  <path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/>
+                </svg></small>
+                 </div>
+              </div>
+
+              <div class="post-input-container">
+                <textarea rows="3" placeholder="What`s on your mind, Gulzina"></textarea>
+                <div class="add-post-links">
+                  <a href="#"><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Zm0 0-4 4m5 0H4m1 0 4-4m1 4 4-4m-4 7v6l4-3-4-3Z"/>
+                  </svg></p> Live Video</a>
+                  <a href="#"><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M4 18V8a1 1 0 0 1 1-1h1.5l1.707-1.707A1 1 0 0 1 8.914 5h6.172a1 1 0 0 1 .707.293L17.5 7H19a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"/>
+                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                  </svg></p> Photo/Video</a>
+                  <a href="#"><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 9h.01M8.99 9H9m12 3a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM6.6 13a5.5 5.5 0 0 0 10.81 0H6.6Z"/>
+                  </svg></p> Felling/ Activity</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-container">
+              <div class="post-row">
+                <div class="user-profile">
+                  <img src="images/ss.jpeg" alt="">
+                <div>
+                <p>Gulzina Gulamidinova</p>
+                <span>June 24 2024, 12:40 pm</span>
+                 </div>
+              </div>
+              <a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2.7" d="M12 6h.01M12 12h.01M12 18h.01"/>
+              </svg></a>
+              </div>
+             
+            <p class="post-text">Subscribe <span>@Easy Tutorials</span> Youtube channel to
+            watch more videos on website development and UI designs. <a href="#">#Easy Tutorials</a>
+          <a href="#">#YoutubeChannel</a></p>
+          <img src="./images/бизнес2.jpg" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11c.889-.086 1.416-.543 2.156-1.057a22.323 22.323 0 0 0 3.958-5.084 1.6 1.6 0 0 1 .582-.628 1.549 1.549 0 0 1 1.466-.087c.205.095.388.233.537.406a1.64 1.64 0 0 1 .384 1.279l-1.388 4.114M7 11H4v6.5A1.5 1.5 0 0 0 5.5 19v0A1.5 1.5 0 0 0 7 17.5V11Zm6.5-1h4.915c.286 0 .372.014.626.15.254.135.472.332.637.572a1.874 1.874 0 0 1 .215 1.673l-2.098 6.4C17.538 19.52 17.368 20 16.12 20c-2.303 0-4.79-.943-6.67-1.475"/>
+              </svg></p> 120</div>
+              <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/>
+              </svg></p> 45</div>
+              <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M5.027 10.9a8.729 8.729 0 0 1 6.422-3.62v-1.2A2.061 2.061 0 0 1 12.61 4.2a1.986 1.986 0 0 1 2.104.23l5.491 4.308a2.11 2.11 0 0 1 .588 2.566 2.109 2.109 0 0 1-.588.734l-5.489 4.308a1.983 1.983 0 0 1-2.104.228 2.065 2.065 0 0 1-1.16-1.876v-.942c-5.33 1.284-6.212 5.251-6.25 5.441a1 1 0 0 1-.923.806h-.06a1.003 1.003 0 0 1-.955-.7A10.221 10.221 0 0 1 5.027 10.9Z"/>
+              </svg></p> 20</div>
+            </div>
+            <div class="post-profile-icon">
+                <img src="images/ss.jpeg"> <i><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 17">
+                  <path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/>
+                </svg></i> 
+            </div>
+          </div>
+        </div> 
+
+
+        <!-- 2 -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/ss.jpeg" alt="">
+            <div>
+            <p>Gulzina Gulamidinova</p>
+            <span>Yanvary 19 2024, 17:40 pm</span>
+             </div>
+          </div>
+          <a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2.7" d="M12 6h.01M12 12h.01M12 18h.01"/>
+          </svg></a>
+          </div>
+         
+        <p class="post-text">Like and share this video with friends, tag<span>@Easy Tutorials</span> facebook page on your post. Ask
+          your doubts in the comments <a href="#">#Easy Tutorials</a>
+      <a href="#">#YoutubeChannel</a></p>
+      <img src="./images/бизнес3.jpeg" class="post-img">
+
+      <div class="post-row">
+        <div class="activity-icons">
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11c.889-.086 1.416-.543 2.156-1.057a22.323 22.323 0 0 0 3.958-5.084 1.6 1.6 0 0 1 .582-.628 1.549 1.549 0 0 1 1.466-.087c.205.095.388.233.537.406a1.64 1.64 0 0 1 .384 1.279l-1.388 4.114M7 11H4v6.5A1.5 1.5 0 0 0 5.5 19v0A1.5 1.5 0 0 0 7 17.5V11Zm6.5-1h4.915c.286 0 .372.014.626.15.254.135.472.332.637.572a1.874 1.874 0 0 1 .215 1.673l-2.098 6.4C17.538 19.52 17.368 20 16.12 20c-2.303 0-4.79-.943-6.67-1.475"/>
+          </svg></p> 100</div>
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/>
+          </svg></p> 75</div>
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M5.027 10.9a8.729 8.729 0 0 1 6.422-3.62v-1.2A2.061 2.061 0 0 1 12.61 4.2a1.986 1.986 0 0 1 2.104.23l5.491 4.308a2.11 2.11 0 0 1 .588 2.566 2.109 2.109 0 0 1-.588.734l-5.489 4.308a1.983 1.983 0 0 1-2.104.228 2.065 2.065 0 0 1-1.16-1.876v-.942c-5.33 1.284-6.212 5.251-6.25 5.441a1 1 0 0 1-.923.806h-.06a1.003 1.003 0 0 1-.955-.7A10.221 10.221 0 0 1 5.027 10.9Z"/>
+          </svg></p> 56</div>
+        </div>
+        <div class="post-profile-icon">
+            <img src="images/ss.jpeg"> <i><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 17">
+              <path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/>
+            </svg></i> 
+        </div>
+      </div>
+    </div>
+
+  <!-- 3 -->
+    <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/ss.jpeg" alt="">
+            <div>
+            <p>Gulzina Gulamidinova</p>
+            <span>Ceptember 22 2024, 11:40 pm</span>
+             </div>
+          </div>
+          <a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2.7" d="M12 6h.01M12 12h.01M12 18h.01"/>
+          </svg></a>
+          </div>
+         
+        <p class="post-text">Like and share this video with friends, tag<span>@Easy Tutorials</span> facebook page on your post. Ask
+          your doubts in the comments <a href="#">#Easy Tutorials</a>
+      <a href="#">#YoutubeChannel</a></p>
+      <img src="./images/3.jpg" class="post-img">
+
+      <div class="post-row">
+        <div class="activity-icons">
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11c.889-.086 1.416-.543 2.156-1.057a22.323 22.323 0 0 0 3.958-5.084 1.6 1.6 0 0 1 .582-.628 1.549 1.549 0 0 1 1.466-.087c.205.095.388.233.537.406a1.64 1.64 0 0 1 .384 1.279l-1.388 4.114M7 11H4v6.5A1.5 1.5 0 0 0 5.5 19v0A1.5 1.5 0 0 0 7 17.5V11Zm6.5-1h4.915c.286 0 .372.014.626.15.254.135.472.332.637.572a1.874 1.874 0 0 1 .215 1.673l-2.098 6.4C17.538 19.52 17.368 20 16.12 20c-2.303 0-4.79-.943-6.67-1.475"/>
+          </svg></p> 1589</div>
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/>
+          </svg></p> 890</div>
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M5.027 10.9a8.729 8.729 0 0 1 6.422-3.62v-1.2A2.061 2.061 0 0 1 12.61 4.2a1.986 1.986 0 0 1 2.104.23l5.491 4.308a2.11 2.11 0 0 1 .588 2.566 2.109 2.109 0 0 1-.588.734l-5.489 4.308a1.983 1.983 0 0 1-2.104.228 2.065 2.065 0 0 1-1.16-1.876v-.942c-5.33 1.284-6.212 5.251-6.25 5.441a1 1 0 0 1-.923.806h-.06a1.003 1.003 0 0 1-.955-.7A10.221 10.221 0 0 1 5.027 10.9Z"/>
+          </svg></p> 987</div>
+        </div>
+        <div class="post-profile-icon">
+            <img src="images/ss.jpeg"> <i><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 17">
+              <path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/>
+            </svg></i> 
+        </div>
+      </div>
+    </div>
+
+
+     <!-- 4 -->
+    <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/ss.jpeg" alt="">
+            <div>
+            <p>Gulzina Gulamidinova</p>
+            <span>March 1 2024, 6:00 pm</span>
+             </div>
+          </div>
+          <a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2.7" d="M12 6h.01M12 12h.01M12 18h.01"/>
+          </svg></a>
+          </div>
+         
+        <p class="post-text">Like and share this video with friends, tag<span>@Easy Tutorials</span> facebook page on your post. Ask
+          your doubts in the comments <a href="#">#Easy Tutorials</a>
+      <a href="#">#YoutubeChannel</a></p>
+      <img src="./images/4.jpg" class="post-img">
+
+      <div class="post-row">
+        <div class="activity-icons">
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11c.889-.086 1.416-.543 2.156-1.057a22.323 22.323 0 0 0 3.958-5.084 1.6 1.6 0 0 1 .582-.628 1.549 1.549 0 0 1 1.466-.087c.205.095.388.233.537.406a1.64 1.64 0 0 1 .384 1.279l-1.388 4.114M7 11H4v6.5A1.5 1.5 0 0 0 5.5 19v0A1.5 1.5 0 0 0 7 17.5V11Zm6.5-1h4.915c.286 0 .372.014.626.15.254.135.472.332.637.572a1.874 1.874 0 0 1 .215 1.673l-2.098 6.4C17.538 19.52 17.368 20 16.12 20c-2.303 0-4.79-.943-6.67-1.475"/>
+          </svg></p> 9854</div>
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/>
+          </svg></p> 564</div>
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M5.027 10.9a8.729 8.729 0 0 1 6.422-3.62v-1.2A2.061 2.061 0 0 1 12.61 4.2a1.986 1.986 0 0 1 2.104.23l5.491 4.308a2.11 2.11 0 0 1 .588 2.566 2.109 2.109 0 0 1-.588.734l-5.489 4.308a1.983 1.983 0 0 1-2.104.228 2.065 2.065 0 0 1-1.16-1.876v-.942c-5.33 1.284-6.212 5.251-6.25 5.441a1 1 0 0 1-.923.806h-.06a1.003 1.003 0 0 1-.955-.7A10.221 10.221 0 0 1 5.027 10.9Z"/>
+          </svg></p> 743</div>
+        </div>
+        <div class="post-profile-icon">
+            <img src="images/ss.jpeg"> <i><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 17">
+              <path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/>
+            </svg></i> 
+        </div>
+      </div>
+    </div>
+
+
+         <!-- 5 -->
+   <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/ss.jpeg" alt="">
+            <div>
+            <p>Gulzina Gulamidinova</p>
+            <span>December 8 2024, 9:40 pm</span>
+             </div>
+          </div>
+          <a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2.7" d="M12 6h.01M12 12h.01M12 18h.01"/>
+          </svg></a>
+          </div>
+         
+        <p class="post-text">Like and share this video with friends, tag<span>@Easy Tutorials</span> facebook page on your post. Ask
+          your doubts in the comments <a href="#">#Easy Tutorials</a>
+      <a href="#">#YoutubeChannel</a></p>
+      <img src="./images/5.jpeg" class="post-img">
+
+      <div class="post-row">
+        <div class="activity-icons">
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11c.889-.086 1.416-.543 2.156-1.057a22.323 22.323 0 0 0 3.958-5.084 1.6 1.6 0 0 1 .582-.628 1.549 1.549 0 0 1 1.466-.087c.205.095.388.233.537.406a1.64 1.64 0 0 1 .384 1.279l-1.388 4.114M7 11H4v6.5A1.5 1.5 0 0 0 5.5 19v0A1.5 1.5 0 0 0 7 17.5V11Zm6.5-1h4.915c.286 0 .372.014.626.15.254.135.472.332.637.572a1.874 1.874 0 0 1 .215 1.673l-2.098 6.4C17.538 19.52 17.368 20 16.12 20c-2.303 0-4.79-.943-6.67-1.475"/>
+          </svg></p> 10789</div>
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/>
+          </svg></p> 4563</div>
+          <div><p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M5.027 10.9a8.729 8.729 0 0 1 6.422-3.62v-1.2A2.061 2.061 0 0 1 12.61 4.2a1.986 1.986 0 0 1 2.104.23l5.491 4.308a2.11 2.11 0 0 1 .588 2.566 2.109 2.109 0 0 1-.588.734l-5.489 4.308a1.983 1.983 0 0 1-2.104.228 2.065 2.065 0 0 1-1.16-1.876v-.942c-5.33 1.284-6.212 5.251-6.25 5.441a1 1 0 0 1-.923.806h-.06a1.003 1.003 0 0 1-.955-.7A10.221 10.221 0 0 1 5.027 10.9Z"/>
+          </svg></p> 763</div>
+        </div>
+        <div class="post-profile-icon">
+            <img src="images/ss.jpeg"> <i><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 17">
+              <path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/>
+            </svg></i> 
+        </div>
+      </div>
+    </div>
+
+          <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+           <div class="sidebar-title">
+            <h4>Events</h4>
+            <a href="#">See  All</a>
+           </div>
+
+           <div class="event">
+            <div class="left-event">
+              <h3>18</h3>
+              <span>March</span>
+            </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
+            </svg>
+            Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+          </div>
+
+
+          <div class="event">
+            <div class="left-event">
+              <h3>22</h3>
+              <span>June</span>
+            </div>
+          <div class="right-event">
+            <h4>Mobile Marceting</h4>
+            <p><svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
+            </svg>
+            
+            Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+          </div>
+          
+          <div class="sidebar-title">
+            <h4>Advertisement</h4>
+            <a href="#">Close</a>
+          </div>
+          <img src="./images/бизнес.jpg" class="sidebar-ads">
+
+          <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="#">Hide Chat</a>
+          </div>
+
+          <div class="online-list">
+            <div class="online">
+              <img src="./images/1.jpg" alt="">
+            </div>
+            <p>Alison Mia</p>
+          </div>
+
+          <div class="online-list">
+            <div class="online">
+              <img src="./images/2.jpeg" alt="">
+            </div>
+            <p>Jackson Aston</p>
+          </div>
+
+          <div class="online-list">
+            <div class="online">
+              <img src="./images/3.3.jpeg" alt="">
+            </div>
+            <p>Samona Rose</p>
+
+          </div>
+        </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright 2021 - Easy Tutorials Youtube Channel</p>
+  </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
